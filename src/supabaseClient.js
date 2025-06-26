@@ -1,9 +1,10 @@
-// src/supabaseClient.js
-
 import { createClient } from "@supabase/supabase-js";
 
-// Match with Netlify env var keys exactly
+// Use ONLY the keys actually set in Netlify
 const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
 const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
+
+if (!supabaseUrl) throw new Error("supabaseUrl is required.");
+if (!supabaseKey) throw new Error("supabaseKey is required.");
 
 export const supabase = createClient(supabaseUrl, supabaseKey);
