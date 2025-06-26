@@ -65,3 +65,5 @@ npm start
 # or
 yarn start
 ```
+
+### Netlify Setup done ✅
