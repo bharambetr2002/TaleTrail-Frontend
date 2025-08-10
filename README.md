@@ -1,69 +1,73 @@
-# 📚 TaleTrail — React + Supabase Starter
+# Welcome to your Lovable project
 
-Welcome to **TaleTrail** — a web app for book lovers to track reading progress, share blogs, and engage with the book community. This project uses **React** for the frontend and **Supabase** for authentication and backend services.
+## Project info
 
----
+**URL**: https://lovable.dev/projects/1f3459e6-7e25-4a49-8341-0f4b1d56e7ab
 
-## 🚀 Project Setup
+## How can I edit this code?
 
-### 1️⃣ Prerequisites
+There are several ways of editing your application.
 
-Make sure you have the following installed:
+**Use Lovable**
 
-- [Node.js](https://nodejs.org/) (v18+ recommended)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-- Git (for cloning the repo)
+Simply visit the [Lovable Project](https://lovable.dev/projects/1f3459e6-7e25-4a49-8341-0f4b1d56e7ab) and start prompting.
 
----
+Changes made via Lovable will be committed automatically to this repo.
 
-# 🚀 Initial Setup
+**Use your preferred IDE**
 
-> Follow these steps to get started with the TaleTrail backend development:
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-1. **Clone this repository**
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-   ```bash
-   git clone https://github.com/bharambetr2002/TaleTrail-Frontend.git
-   cd TaleTrail-Frontend
-   ```
+Follow these steps:
 
-2. Mail me your GitHub ID
-   Send your GitHub username to: bharambetr2002@gmail.com
-   I’ll add you as a collaborator to the repository.
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-3. Create your own branch
-   ```bash
-   git checkout -b branch_name
-   ```
-   all changes you do are to be done in this branch
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-## 📦 Installation
+# Step 3: Install the necessary dependencies.
+npm i
 
-```bash
-# Install dependencies
-npm install
-# or
-yarn
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
 
-### 🔑 Environment Variables
+**Edit a file directly in GitHub**
 
-Create a .env file in the root of the project with the following content:
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-```bash
-REACT_APP_SUPABASE_URL=https://your-project.supabase.co
-REACT_APP_SUPABASE_ANON_KEY=your-public-anon-key
-```
+**Use GitHub Codespaces**
 
-> ⚠️ Never share your service_role or private keys publicly. Use only the anon/public key from Supabase for frontend.
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-### 🧪 Running the Project
+## What technologies are used for this project?
 
-```bash
-# Start the development server
-npm start
-# or
-yarn start
-```
+This project is built with:
 
-### Netlify Setup done ✅
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/1f3459e6-7e25-4a49-8341-0f4b1d56e7ab) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
