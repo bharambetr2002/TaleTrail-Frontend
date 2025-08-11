@@ -14,10 +14,16 @@ import AuthorDetail from "./pages/AuthorDetail";
 import Publishers from "./pages/Publishers";
 import PublisherDetail from "./pages/PublisherDetail";
 import Blogs from "./pages/Blogs";
+import BlogDetail from "./pages/BlogDetail";
+import CreateBlog from "./pages/CreateBlog";
+import UserProfile from "./pages/UserProfile";
+import Dashboard from "./pages/Dashboard";
+import Profile from "./pages/Profile";
 import Library from "./pages/Library";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";
+
 
 const queryClient = new QueryClient();
 
@@ -41,13 +47,30 @@ const App = () => (
                 <Route path="/publishers" element={<Publishers />} />
                 <Route path="/publishers/:id" element={<PublisherDetail />} />
                 <Route path="/blogs" element={<Blogs />} />
+                <Route path="/blogs/:id" element={<BlogDetail />} />
+                <Route path="/profile/:username" element={<UserProfile />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
                 
                 {/* Protected Routes */}
+                <Route path="/dashboard" element={
+                  <ProtectedRoute>
+                    <Dashboard />
+                  </ProtectedRoute>
+                } />
                 <Route path="/library" element={
                   <ProtectedRoute>
                     <Library />
+                  </ProtectedRoute>
+                } />
+                <Route path="/profile" element={
+                  <ProtectedRoute>
+                    <Profile />
+                  </ProtectedRoute>
+                } />
+                <Route path="/create-blog" element={
+                  <ProtectedRoute>
+                    <CreateBlog />
                   </ProtectedRoute>
                 } />
                 
