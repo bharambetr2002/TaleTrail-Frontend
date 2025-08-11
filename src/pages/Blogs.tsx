@@ -65,7 +65,7 @@ const Blogs: React.FC = () => {
             </p>
           </div>
           {isAuthenticated && (
-            <Link to="/blogs/new">
+            <Link to="/create-blog">
               <Button className="btn-minimal">
                 <Plus className="mr-2 h-4 w-4" />
                 Write Blog
@@ -94,7 +94,7 @@ const Blogs: React.FC = () => {
               Be the first to share your reading thoughts!
             </p>
             {isAuthenticated && (
-              <Link to="/blogs/new">
+              <Link to="/create-blog">
                 <Button className="btn-minimal">
                   <Plus className="mr-2 h-4 w-4" />
                   Write First Blog

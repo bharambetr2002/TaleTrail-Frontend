@@ -66,9 +66,14 @@ const Header: React.FC = () => {
           <div className="flex items-center space-x-4">
             {isAuthenticated ? (
               <div className="flex items-center space-x-4">
+                <Link to="/dashboard">
+                  <Button variant="ghost" size="sm">
+                    Dashboard
+                  </Button>
+                </Link>
                 <Link to="/library">
                   <Button variant="ghost" size="sm">
-                    My Library
+                    Library
                   </Button>
                 </Link>
                 <div className="flex items-center space-x-2">
